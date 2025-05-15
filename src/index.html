@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultime Notizie di Brawl Stars</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="icon" href="https://supercell.com/en/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-image: url('https://i0.wp.com/img.clasher.us/images/full/5e64e22615f7be553840f437.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+        h1, h2 {
+            font-family: 'Oswald', sans-serif;
+            color: #000; /* Nero forte per i titoli */
+        }
+        article {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Brawl-News</h1>
+
+<article>
+        <h2>Notizia dalla rete: Un nuovo Brawler è in arrivo?</h2>
+        <p>Secondo alcune indiscrezioni trapelate online, i fan di Brawl Stars potrebbero presto accogliere un nuovo personaggio nel roster. Al momento, non ci sono dettagli ufficiali sul nome o le abilità del potenziale nuovo Brawler, ma l'entusiasmo nella community è già palpabile. Restiamo in attesa di annunci da parte di Supercell per conferme e ulteriori informazioni.</p>
+        <p>Fonte: Indiscrezioni dalla rete</p>
+        <img src="https://via.placeholder.com/400x200.png?text=Nuovo+Brawler+in+arrivo" alt="Immagine generica di un nuovo Brawler in arrivo">
+        </article>
+        <div>
+            <button class="like-button" onclick="handleLike(this)">❤️ Mi Piace</button>
+            <span class="like-count">0</span>
+            <button class="dislike-button" onclick="handleDislike(this)">👎 Non Mi Piace</button>
+            <span class="dislike-count">0</span>
+        </div>
+
+        <article>
+            <h2>Aggiornamento Bilanciamento Brawler: Chi sale e chi scende?</h2>
+            <p>Supercell ha rilasciato un nuovo aggiornamento di bilanciamento che impatta diversi Brawler. Alcuni personaggi hanno ricevuto buff per aumentare la loro competitività, mentre altri sono stati nerfaati per bilanciare il meta. I giocatori sono invitati a consultare le note della patch ufficiali per tutti i dettagli.</p>
+            <p>Fonte: Note della Patch Ufficiali Supercell</p>
+            <img src="https://via.placeholder.com/400x200.png?text=Aggiornamento+Bilanciamento" alt="Immagine generica di un aggiornamento di bilanciamento">
+        </article>
+        <div>
+            <button class="like-button" onclick="handleLike(this)">❤️ Mi Piace</button>
+            <span class="like-count">0</span>
+            <button class="dislike-button" onclick="handleDislike(this)">👎 Non Mi Piace</button>
+            <span class="dislike-count">0</span>
+        </div>
+
+        <article>
+            <h2>Nuova Skin Leggendaria per Leon Disponibile Ora!</h2>
+            <p>I fan di Leon possono rallegrarsi! È ora disponibile nel negozio una nuova skin leggendaria per il popolare Brawler. La skin presenta effetti visivi e sonori unici. Affrettatevi ad acquistarla se volete aggiungere un tocco di stile al vostro assassino preferito!</p>
+            <p>Fonte: Negozio in-game di Brawl Stars</p>
+            <img src="https://via.placeholder.com/400x200.png?text=Nuova+Skin+Leon" alt="Immagine generica di una nuova skin per Leon">
+        </article>
+        <div>
+            <button class="like-button" onclick="handleLike(this)">❤️ Mi Piace</button>
+            <span class="like-count">0</span>
+            <button class="dislike-button" onclick="handleDislike(this)">👎 Non Mi Piace</button>
+            <span class="dislike-count">0</span>
+        </div>
+        
+
+    <section id="notizie">
+        <!-- Le notizie verranno aggiunte qui -->
+    </section>
+
+</body>
+<script>
+    function handleLike(button) {
+        const likeCountSpan = button.nextElementSibling;
+        let currentLikes = parseInt(likeCountSpan.textContent);
+        currentLikes++;
+        likeCountSpan.textContent = currentLikes;
+    }
+
+    function handleDislike(button) {
+        const dislikeCountSpan = button.nextElementSibling;
+        let currentDislikes = parseInt(dislikeCountSpan.textContent);
+        currentDislikes++;
+        dislikeCountSpan.textContent = currentDislikes;
+    }
+</script>
+
+</html>
